@@ -15,8 +15,8 @@ const helmet = require('helmet');
 var app = express();
 //set up mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb://mprown1:2018Mlab@ds253918.mlab.com:53918/local_library';
-mongoDB = 'mongodb://localhost/test';
+var mongoDB = process.env.MONGODB_URI || 'mongodb://mprown1:2018Mlab@ds253918.mlab.com:53918/local_library';
+
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
