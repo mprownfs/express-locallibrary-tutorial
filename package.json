@@ -21,7 +21,8 @@
     "moment": "^2.22.0",
     "mongoose": "^5.0.14",
     "morgan": "~1.9.0",
-    "pug": "2.0.0-beta11"
+    "pug": "2.0.0-beta11",
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
